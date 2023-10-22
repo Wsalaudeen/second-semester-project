@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+/* global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* utility styling */
+.navigate {
+  text-decoration: underline;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Home page styling */
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* utility styling */
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 40%;
+  height: auto;
+  margin-left: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.home-details {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.home-details p {
+  line-height: 1.5;
+  font-size: larger;
+}
+
+/* Repository styling */
+
+.loader {
+  margin: 1rem;
+}
+
+.loader img {
+  width: 60%;
+}
+
+.repo--link {
+  color: black;
+}
+.span {
+  color: black;
+  font-size: 0.8em;
+  margin-right: 0.4em;
+}
+
+.title {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 0.4em;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.pages {
+  color: rgb(88, 83, 76);
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.btn {
+  text-decoration: none;
+  margin: 4px;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: black;
   color: white;
+  transition: 1s;
 }
 
-.App-link {
-  color: #61dafb;
+.error-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* utility styling */
+.home-cont {
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.error-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.error-title {
+  font-size: larger;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.error-header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.error-top {
+  margin-top: 70px;
+}
+
+.border {
+  border: 2px solid black;
+  margin-top: 50px;
 }
